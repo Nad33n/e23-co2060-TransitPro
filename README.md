@@ -1,57 +1,81 @@
-___
-# DELETE THIS INSTRUCTIONS AND ADD AN INTRODUCTION ABOUT YOUR PROJECT
-___
+# TransitPro – Smart Transport Management System
 
-# eYY-co2060-project-template
+## Introduction
 
-This is a sample repository you can use for your Software Systems Design Project. Once you followed these instructions, remove the text and add a brief introduction to here.
+TransitPro is a web-based transport management system developed to improve the efficiency of managing transportation services. The system provides a centralized platform where administrators can manage vehicles, routes, schedules, and passenger information while allowing users to easily view transport details and interact with the system.
 
-### Enable GitHub Pages
+The main objective of TransitPro is to digitize transportation management processes, reduce manual workload, and provide a more reliable and user-friendly experience for both transport operators and passengers.
 
-You can put the things to be shown in GitHub pages into the _docs/_ folder. Both html and md file formats are supported. You need to go to settings and enable GitHub pages and select _main_ branch and _docs_ folder from the dropdowns, as shown in the below image.
+## Features
 
-![image](https://user-images.githubusercontent.com/11540782/98789936-028d3600-2429-11eb-84be-aaba665fdc75.png)
+* User registration and login system
+* Transport route and schedule management
+* Vehicle management system
+* Passenger information management
+* Administrative dashboard for system monitoring
+* Backend API integration for data management
 
-### Special Configurations
+## Technologies Used
 
-These projects will be automatically added into [https://projects.ce.pdn.ac.lk](). If you like to show more details about your project on this site, you can fill the parameters in the file, _/docs/index.json_
+**Frontend**
+
+* React
+* HTML
+* CSS
+* JavaScript
+
+**Backend**
+
+* Node.js
+* Express.js
+
+**Database**
+
+* MongoDB
+
+**Tools**
+
+* Git
+* GitHub
+* npm
+
+## Project Structure
 
 ```
-{
-  "title": "This is the title of the project",
-  "team": [
-    {
-      "name": "Team Member Name 1",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 2",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    },
-    {
-      "name": "Team Member Name 3",
-      "email": "email@eng.pdn.ac.lk",
-      "eNumber": "E/yy/xxx"
-    }
-  ],
-  "supervisors": [
-    {
-      "name": "Dr. Supervisor 1",
-      "email": "email@eng.pdn.ac.lk"
-    },
-    {
-      "name": "Supervisor 2",
-      "email": "email@eng.pdn.ac.lk"
-    }
-  ],
-  "tags": ["Web", "Software Systems", "CO2060"]
-}
+TransitPro/
+│
+├── frontend/        # Frontend source code
+├── backend/         # Backend server and API
+├── docs/            # GitHub Pages documentation
+├── README.md        # Project description
+└── package.json     # Project dependencies
 ```
 
-Once you filled this _index.json_ file, please verify the syntax is correct. (You can use [this](https://jsonlint.com/) tool).
+## GitHub Pages
 
-### Page Theme
+Project documentation is hosted using **GitHub Pages** through the `/docs` directory.
 
-A custom theme integrated with this GitHub Page, which is based on [github.com/cepdnaclk/eYY-project-theme](https://github.com/cepdnaclk/eYY-project-theme). If you like to remove this default theme, you can remove the file, _docs/\_config.yml_ and use HTML based website.
+To enable GitHub Pages:
+
+1. Go to the repository **Settings**
+2. Select **Pages**
+3. Choose **Branch: main**
+4. Select **Folder: /docs**
+5. Save the settings
+
+## Team Members
+
+* N.A.N.D. Narachchi
+* J. Dinojan
+* T.T.R. Yapa
+* H.P.L.N. Yashassri
+
+## Course Information
+
+**Course:** CO2060 – Software Systems Design Project
+**Department:** Computer Engineering
+**University:** University of Peradeniya
+
+## License
+
+This project is developed for academic purposes as part of the CO2060 course.
