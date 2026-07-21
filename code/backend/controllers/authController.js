@@ -2,14 +2,18 @@ const Admin = require("../models/Admin");
 
 // TEMP: No password hashing yet (we add hashing later)
 exports.login = async (req, res) => {
-  const { username, password } = req.body;
+  const username = req.body.username;
+  const password = req.body.password;
 
-  const admin = await Admin.findOne({ username });
+  const admin = await Admin.findOne({ username: username });
 
-  if (!admin) return res.status(400).json({ error: "User not found" });
+  if (!admin) {
+    return res.status(400).json({ error: "User not found" });
+  }
 
-  if (admin.password !== password)
+  if (admin.password !== password) {
     return res.status(400).json({ error: "Incorrect password" });
+  }
 
-  res.json({ message: "Login successful" });
+  return res.json({ message: "Login successful" });
 };
