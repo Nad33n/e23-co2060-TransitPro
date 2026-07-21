@@ -55,4 +55,3 @@ exports.getRouteById = async (req, res) => {
 };
   
   
-
